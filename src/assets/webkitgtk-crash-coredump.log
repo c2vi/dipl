@@ -1,0 +1,469 @@
+Nov 30 10:55:46 main rtkit-daemon[2874]: Successfully made thread 1464900 of process 1464894 owned by '1000' RT at priority 5.
+Nov 30 10:55:46 main rtkit-daemon[2874]: Successfully made thread 1464959 of process 1464894 owned by '1000' RT at priority 5.
+Nov 30 10:55:46 main systemd[1]: Started Process Core Dump (PID 1464984/UID 0).
+Nov 30 10:55:46 main systemd-timesyncd[833]: Network configuration changed, trying to establish connection.
+Nov 30 10:55:46 main systemd-timesyncd[833]: Network configuration changed, trying to establish connection.
+Nov 30 10:55:46 main systemd-timesyncd[833]: Network configuration changed, trying to establish connection.
+Nov 30 10:55:46 main systemd-timesyncd[833]: Contacted time server 83.137.41.10:123 (2.nixos.pool.ntp.org).
+Nov 30 10:55:46 main rtkit-daemon[2874]: Successfully made thread 1464909 of process 1464905 owned by '1000' RT at priority 5.
+Nov 30 10:55:46 main rtkit-daemon[2874]: Successfully made thread 1464987 of process 1464905 owned by '1000' RT at priority 5.
+Nov 30 10:56:20 main systemd-coredump[1464985]: [🡕] Process 1464894 (WebKitWebProces) of user 1000 dumped core.
+
+                                                Module libGLESv2.so.2 without build-id.
+                                                Module libxshmfence.so.1 without build-id.
+                                                Module libxcb-sync.so.1 without build-id.
+                                                Module libxcb-present.so.0 without build-id.
+                                                Module libxcb-xfixes.so.0 without build-id.
+                                                Module libxcb-dri2.so.0 without build-id.
+                                                Module libpciaccess.so.0 without build-id.
+                                                Module libncursesw.so.6 without build-id.
+                                                Module libdrm_intel.so.1 without build-id.
+                                                Module libdrm_nouveau.so.2 without build-id.
+                                                Module libdrm_amdgpu.so.1 without build-id.
+                                                Module libdrm_radeon.so.1 without build-id.
+                                                Module libsensors.so.5 without build-id.
+                                                Module libxcb-dri3.so.0 without build-id.
+                                                Module libkeyutils.so.1 without build-id.
+                                                Module libkrb5support.so.0 without build-id.
+                                                Module libcom_err.so.3 without build-id.
+                                                Module libk5crypto.so.3 without build-id.
+                                                Module libkrb5.so.3 without build-id.
+                                                Module libgssapi_krb5.so.2 without build-id.
+                                                Module libssh2.so.1 without build-id.
+                                                Module libudev.so.1 without build-id.
+                                                Module libGLdispatch.so.0 without build-id.
+                                                Module libduktape.so.207 without build-id.
+                                                Module libXdmcp.so.6 without build-id.
+                                                Module libXau.so.6 without build-id.
+                                                Module libdatrie.so.1 without build-id.
+                                                Module libjson-glib-1.0.so.0 without build-id.
+                                                Module libxcb-randr.so.0 without build-id.
+                                                Module libgudev-1.0.so.0 without build-id.
+                                                Module libevdev.so.2 without build-id.
+                                                Module libaspell.so.15 without build-id.
+                                                Module libnghttp2.so.14 without build-id.
+                                                Module libpsl.so.5 without build-id.
+                                                Module libyuv.so without build-id.
+                                                Module libvmaf.so.3 without build-id.
+                                                Module libaom.so.3 without build-id.
+                                                Module libdav1d.so.7 without build-id.
+                                                Module libbrotlienc.so.1 without build-id.
+                                                Module libbrotlicommon.so.1 without build-id.
+                                                Module libjxl_cms.so.0.10 without build-id.
+                                                Module libsharpyuv.so.0 without build-id.
+                                                Module libX11-xcb.so.1 without build-id.
+                                                Module libGLX.so.0 without build-id.
+                                                Module libEGL.so.1 without build-id.
+                                                Module liborc-0.4.so.0 without build-id.
+                                                Module libunwind.so.8 without build-id.
+                                                Module libexpat.so.1 without build-id.
+                                                Module libbz2.so.1 without build-id.
+                                                Module libbrotlidec.so.1 without build-id.
+                                                Module libwoff2common.so.1.0.2 without build-id.
+                                                Module libpxbackend-1.0.so without build-id.
+                                                Module libgmp.so.10 without build-id.
+                                                Module libhogweed.so.6 without build-id.
+                                                Module libnettle.so.8 without build-id.
+                                                Module libunistring.so.5 without build-id.
+                                                Module libidn2.so.0 without build-id.
+                                                Module libp11-kit.so.0 without build-id.
+                                                Module libzstd.so.1 without build-id.
+                                                Module liblzma.so.5 without build-id.
+                                                Module liblz4.so.1 without build-id.
+                                                Module libcap.so.2 without build-id.
+                                                Module libpcre2-8.so.0 without build-id.
+                                                Module libffi.so.8 without build-id.
+                                                Module libselinux.so.1 without build-id.
+                                                Module libxcb-shm.so.0 without build-id.
+                                                Module libxcb-render.so.0 without build-id.
+                                                Module libxcb.so.1 without build-id.
+                                                Module libXrender.so.1 without build-id.
+                                                Module libgraphite2.so.3 without build-id.
+                                                Module libthai.so.0 without build-id.
+                                                Module libXinerama.so.1 without build-id.
+                                                Module libXrandr.so.2 without build-id.
+                                                Module libXcomposite.so.1 without build-id.
+                                                Module libXdamage.so.1 without build-id.
+                                                Module libXcursor.so.1 without build-id.
+                                                Module libXext.so.6 without build-id.
+                                                Module libxkbcommon.so.0 without build-id.
+                                                Module libXfixes.so.3 without build-id.
+                                                Module libtracker-sparql-3.0.so.0 without build-id.
+                                                Module libXi.so.6 without build-id.
+                                                Module libfribidi.so.0 without build-id.
+                                                Module libpangoft2-1.0.so.0 without build-id.
+                                                Module libdrm.so.2 without build-id.
+                                                Module libseccomp.so.2 without build-id.
+                                                Module libmanette-0.2.so.0 without build-id.
+                                                Module libX11.so.6 without build-id.
+                                                Module libtasn1.so.6 without build-id.
+                                                Module libenchant-2.so.2 without build-id.
+                                                Module libavif.so.16 without build-id.
+                                                Module libjxl.so.0.10 without build-id.
+                                                Module libwebp.so.7 without build-id.
+                                                Module libwebpdemux.so.2 without build-id.
+                                                Module libpng16.so.16 without build-id.
+                                                Module libjpeg.so.62 without build-id.
+                                                Module libgstfft-1.0.so.0 without build-id.
+                                                Module libgstgl-1.0.so.0 without build-id.
+                                                Module libgstvideo-1.0.so.0 without build-id.
+                                                Module libgsttag-1.0.so.0 without build-id.
+                                                Module libgsttranscoder-1.0.so.0 without build-id.
+                                                Module libgstaudio-1.0.so.0 without build-id.
+                                                Module libgstpbutils-1.0.so.0 without build-id.
+                                                Module libgstreamer-1.0.so.0 without build-id.
+                                                Module libgstbase-1.0.so.0 without build-id.
+                                                Module libgstapp-1.0.so.0 without build-id.
+                                                Module libgstallocators-1.0.so.0 without build-id.
+                                                Module libgpg-error.so.0 without build-id.
+                                                Module libgcrypt.so.20 without build-id.
+                                                Module libharfbuzz-icu.so.0 without build-id.
+                                                Module libfreetype.so.6 without build-id.
+                                                Module libfontconfig.so.1 without build-id.
+                                                Module libwoff2dec.so.1.0.2 without build-id.
+                                                Module liblcms2.so.2 without build-id.
+                                                Module libxslt.so.1 without build-id.
+                                                Module libxml2.so.2 without build-id.
+                                                Module libepoxy.so.0 without build-id.
+                                                Module libproxy.so.1 without build-id.
+                                                Module libgnutls.so.30 without build-id.
+                                                Module libgcc_s.so.1 without build-id.
+                                                Module libstdc++.so.6 without build-id.
+                                                Module libbacktrace.so.0 without build-id.
+                                                Module libsystemd.so.0 without build-id.
+                                                Module libatomic.so.1 without build-id.
+                                                Module libicuuc.so.73 without build-id.
+                                                Module libicui18n.so.73 without build-id.
+                                                Module libicudata.so.73 without build-id.
+                                                Module libharfbuzz.so.0 without build-id.
+                                                Module libpango-1.0.so.0 without build-id.
+                                                Module libpangocairo-1.0.so.0 without build-id.
+                                                Module libz.so.1 without build-id.
+                                                Module libgiolibproxy.so without build-id.
+                                                Module libgiognutls.so without build-id.
+                                                Module libgiognomeproxy.so without build-id.
+                                                Stack trace of thread 1464976:
+                                                #0  0x00007fffed4a2efc __pthread_kill_implementation (libc.so.6 + 0x8fefc)
+                                                #1  0x00007fffed452e86 raise (libc.so.6 + 0x3fe86)
+                                                #2  0x00007fffed43b935 abort (libc.so.6 + 0x28935)
+                                                #3  0x00007ffff0399296 _ZNK3JSC4Wasm10BBQJITImpl6BBQJIT8Location9asAddressEv.cold (libjavascriptcoregtk-4.1.so.0 + 0x199296)
+                                                #4  0x00007ffff17d4b97 _ZN3JSC4Wasm10BBQJITImpl6BBQJIT14emitMoveMemoryENS0_8TypeKindENS2_8LocationES4_ (libjavascriptcoregtk-4.1.so.0 + 0x15d4b97)
+                                                #5  0x00007ffff178a74b _ZN3JSC4Wasm10BBQJITImpl6BBQJIT20returnValuesFromCallILm8EEEvRN3WTF6VectorINS2_5ValueEXT_ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEERKNS0_17FunctionSignatureERKNS0_15CallInformationE (libjavascriptcoregtk-4.1.so.0 + 0x158a74b)
+                                                #6  0x00007ffff177704f _ZN3JSC4Wasm10BBQJITImpl6BBQJIT7addCallEjRKNS0_14TypeDefinitionERN3WTF6VectorINS2_5ValueELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEERNS7_IS8_Lm8ES9_Lm16ESA_EENS_16CallLinkInfoBase8CallTypeE (libjavascriptcoregtk-4.1.so.0 + 0x157704f)
+                                                #7  0x00007ffff17c0f65 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE15parseExpressionEv (libjavascriptcoregtk-4.1.so.0 + 0x15c0f65)
+                                                #8  0x00007ffff17d1745 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE9parseBodyEv (libjavascriptcoregtk-4.1.so.0 + 0x15d1745)
+                                                #9  0x00007ffff17d2022 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE5parseEv (libjavascriptcoregtk-4.1.so.0 + 0x15d2022)
+                                                #10 0x00007ffff17795cd _ZN3JSC4Wasm18parseAndCompileBBQERNS0_18CompilationContextERNS0_9BBQCalleeERKNS0_12FunctionDataERKNS0_14TypeDefinitionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSB_15CrashOnOverflowELm16ENSB_10FastMallocEEERKNS0_17ModuleInformationENS_10MemoryModeEjSt8optionalIbEjPNS0_11TierUpCountE (libjavascriptcoregtk-4.1.so.0 + 0x15795cd)
+                                                #11 0x00007ffff1822ad9 _ZN3JSC4Wasm7BBQPlan15compileFunctionEjRNS0_9BBQCalleeERNS0_18CompilationContextERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEEPNS0_11TierUpCountE (libjavascriptcoregtk-4.1.so.0 + 0x1622ad9)
+                                                #12 0x00007ffff183aec3 _ZN3JSC4Wasm7BBQPlan4workENS0_4Plan17CompilationEffortE (libjavascriptcoregtk-4.1.so.0 + 0x163aec3)
+                                                #13 0x00007ffff1a176fb _ZN3JSC4Wasm8Worklist6Thread4workEv (libjavascriptcoregtk-4.1.so.0 + 0x18176fb)
+                                                #14 0x00007ffff1aff1e7 _ZN3WTF6Detail15CallableWrapperIZNS_15AutomaticThread5startERKNS_14AbstractLockerEEUlvE_vJEE4callEv (libjavascriptcoregtk-4.1.so.0 + 0x18ff1e7)
+                                                #15 0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #16 0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #17 0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #18 0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464941:
+                                                #0  0x00007fffed50f62f __poll (libc.so.6 + 0xfc62f)
+                                                #1  0x00007ffff2144f2f g_main_context_iterate_unlocked.isra.0 (libglib-2.0.so.0 + 0x5ef2f)
+                                                #2  0x00007ffff214588f g_main_loop_run (libglib-2.0.so.0 + 0x5f88f)
+                                                #3  0x00007ffff1ba5700 _ZN3WTF7RunLoop3runEv (libjavascriptcoregtk-4.1.so.0 + 0x19a5700)
+                                                #4  0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #5  0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #6  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #7  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464894:
+                                                #0  0x00007ffff03c0ebf wasm_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c0ebf)
+                                                #1  0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #2  0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #3  0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #4  0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #5  0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #6  0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #7  0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #8  0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #9  0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #10 0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #11 0x00007ffff03c199c wasm_trampoline_wasm_call (libjavascriptcoregtk-4.1.so.0 + 0x1c199c)
+                                                #12 0x00007ffff03c1bb3 wasm_trampoline_wasm_call_wide16 (libjavascriptcoregtk-4.1.so.0 + 0x1c1bb3)
+                                                #13 0x00007fff9ee08eaa n/a (n/a + 0x0)
+                                                #14 0x00007ffff03ba0e2 llint_op_call (libjavascriptcoregtk-4.1.so.0 + 0x1ba0e2)
+                                                #15 0x00007ffff03ba434 llint_op_construct (libjavascriptcoregtk-4.1.so.0 + 0x1ba434)
+                                                #16 0x00007ffff03ba0e2 llint_op_call (libjavascriptcoregtk-4.1.so.0 + 0x1ba0e2)
+                                                #17 0x00007ffff03ba0e2 llint_op_call (libjavascriptcoregtk-4.1.so.0 + 0x1ba0e2)
+                                                #18 0x00007ffff03bae8e llint_op_call_ignore_result (libjavascriptcoregtk-4.1.so.0 + 0x1bae8e)
+                                                #19 0x00007ffff039cebe vmEntryToJavaScript (libjavascriptcoregtk-4.1.so.0 + 0x19cebe)
+                                                #20 0x00007ffff0fe6915 _ZN3JSC11Interpreter11executeCallEPNS_8JSObjectERKNS_8CallDataENS_7JSValueERKNS_7ArgListE (libjavascriptcoregtk-4.1.so.0 + 0xde6915)
+                                                #21 0x00007ffff149256a _ZN3JSC14runJSMicrotaskEPNS_14JSGlobalObjectEN3WTF23ObjectIdentifierGenericINS_23MicrotaskIdentifierTypeENS2_38ObjectIdentifierThreadSafeAccessTraitsEEENS_7JSValueES7_S7_S7_S7_ (libjavascriptcoregtk-4.1.so.0 + 0x129256a)
+                                                #22 0x00007ffff1492753 _ZN3JSC11JSMicrotask3runEPNS_14JSGlobalObjectE (libjavascriptcoregtk-4.1.so.0 + 0x1292753)
+                                                #23 0x00007ffff4fa435c _ZN3WTF6Detail15CallableWrapperIZN7WebCore15JSDOMWindowBase25queueMicrotaskToEventLoopERN3JSC14JSGlobalObjectEONS_3RefINS4_9MicrotaskENS_12RawPtrTraitsIS8_EENS_21DefaultRefDerefTraitsIS8_EEEEEUlvE_vJEE4callEv (libwebkit2gtk-4.1.so.0 + 0x21a435c)
+                                                #24 0x00007ffff5425f1e _ZN7WebCore14MicrotaskQueue26performMicrotaskCheckpointEv (libwebkit2gtk-4.1.so.0 + 0x2625f1e)
+                                                #25 0x00007ffff54b2c73 _ZN7WebCore15WindowEventLoop17didReachTimeToRunEv (libwebkit2gtk-4.1.so.0 + 0x26b2c73)
+                                                #26 0x00007ffff5d00eac _ZN7WebCore12ThreadTimers24sharedTimerFiredInternalEv.part.0 (libwebkit2gtk-4.1.so.0 + 0x2f00eac)
+                                                #27 0x00007ffff1ba4bcc _ZZN3WTF7RunLoop9TimerBaseC4ERS0_ENUlPvE_4_FUNES3_ (libjavascriptcoregtk-4.1.so.0 + 0x19a4bcc)
+                                                #28 0x00007ffff1ba55bf _ZN3WTF7RunLoopUlP8_GSourcePFiPvES3_E_4_FUNES2_S5_S3_ (libjavascriptcoregtk-4.1.so.0 + 0x19a55bf)
+                                                #29 0x00007ffff2141e39 g_main_dispatch (libglib-2.0.so.0 + 0x5be39)
+                                                #30 0x00007ffff2144fd7 g_main_context_iterate_unlocked.isra.0 (libglib-2.0.so.0 + 0x5efd7)
+                                                #31 0x00007ffff214588f g_main_loop_run (libglib-2.0.so.0 + 0x5f88f)
+                                                #32 0x00007ffff1ba5700 _ZN3WTF7RunLoop3runEv (libjavascriptcoregtk-4.1.so.0 + 0x19a5700)
+                                                #33 0x00007ffff3ebe2c1 _ZN6WebKit14WebProcessMainEiPPc (libwebkit2gtk-4.1.so.0 + 0x10be2c1)
+                                                #34 0x00007fffed43d10e __libc_start_call_main (libc.so.6 + 0x2a10e)
+                                                #35 0x00007fffed43d1c9 __libc_start_main@@GLIBC_2.34 (libc.so.6 + 0x2a1c9)
+                                                #36 0x0000000000401075 _start (WebKitWebProcess + 0x1075)
+
+                                                Stack trace of thread 1464979:
+                                                #0  0x00007ffff1749b57 _ZN3JSC4Wasm10BBQJITImpl6BBQJIT10locationOfENS2_5ValueE (libjavascriptcoregtk-4.1.so.0 + 0x1549b57)
+                                                #1  0x00007ffff174b34a _ZN3JSC4Wasm10BBQJITImpl6BBQJIT16allocateWithHintENS2_5ValueENS2_8LocationE (libjavascriptcoregtk-4.1.so.0 + 0x154b34a)
+                                                #2  0x00007ffff17d4800 _ZZN3JSC4Wasm10BBQJITImpl6BBQJIT4loadENS0_10LoadOpTypeENS2_5ValueERS4_jENKUlT_E_clINS_22AbstractMacroAssemblerINS_12X86AssemblerEE7AddressEEES4_S6_.isra.0 (libjavascriptcoregtk-4.1.so.0 + 0x15d4800)
+                                                #3  0x00007ffff17eb5af _ZN3JSC4Wasm10BBQJITImpl6BBQJIT4loadENS0_10LoadOpTypeENS2_5ValueERS4_j (libjavascriptcoregtk-4.1.so.0 + 0x15eb5af)
+                                                #4  0x00007ffff17a9825 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE4loadENS0_4TypeE (libjavascriptcoregtk-4.1.so.0 + 0x15a9825)
+                                                #5  0x00007ffff17b4a77 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE15parseExpressionEv (libjavascriptcoregtk-4.1.so.0 + 0x15b4a77)
+                                                #6  0x00007ffff17d1745 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE9parseBodyEv (libjavascriptcoregtk-4.1.so.0 + 0x15d1745)
+                                                #7  0x00007ffff17d2022 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE5parseEv (libjavascriptcoregtk-4.1.so.0 + 0x15d2022)
+                                                #8  0x00007ffff17795cd _ZN3JSC4Wasm18parseAndCompileBBQERNS0_18CompilationContextERNS0_9BBQCalleeERKNS0_12FunctionDataERKNS0_14TypeDefinitionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSB_15CrashOnOverflowELm16ENSB_10FastMallocEEERKNS0_17ModuleInformationENS_10MemoryModeEjSt8optionalIbEjPNS0_11TierUpCountE (libjavascriptcoregtk-4.1.so.0 + 0x15795cd)
+                                                #9  0x00007ffff1822ad9 _ZN3JSC4Wasm7BBQPlan15compileFunctionEjRNS0_9BBQCalleeERNS0_18CompilationContextERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEEPNS0_11TierUpCountE (libjavascriptcoregtk-4.1.so.0 + 0x1622ad9)
+                                                #10 0x00007ffff183aec3 _ZN3JSC4Wasm7BBQPlan4workENS0_4Plan17CompilationEffortE (libjavascriptcoregtk-4.1.so.0 + 0x163aec3)
+                                                #11 0x00007ffff1a176fb _ZN3JSC4Wasm8Worklist6Thread4workEv (libjavascriptcoregtk-4.1.so.0 + 0x18176fb)
+                                                #12 0x00007ffff1aff1e7 _ZN3WTF6Detail15CallableWrapperIZNS_15AutomaticThread5startERKNS_14AbstractLockerEEUlvE_vJEE4callEv (libjavascriptcoregtk-4.1.so.0 + 0x18ff1e7)
+                                                #13 0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #14 0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #15 0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #16 0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464978:
+                                                #0  0x00007fffed4a2efc __pthread_kill_implementation (libc.so.6 + 0x8fefc)
+                                                #1  0x00007fffed452e86 raise (libc.so.6 + 0x3fe86)
+                                                #2  0x00007fffed43b935 abort (libc.so.6 + 0x28935)
+                                                #3  0x00007ffff0399296 _ZNK3JSC4Wasm10BBQJITImpl6BBQJIT8Location9asAddressEv.cold (libjavascriptcoregtk-4.1.so.0 + 0x199296)
+                                                #4  0x00007ffff17d4b97 _ZN3JSC4Wasm10BBQJITImpl6BBQJIT14emitMoveMemoryENS0_8TypeKindENS2_8LocationES4_ (libjavascriptcoregtk-4.1.so.0 + 0x15d4b97)
+                                                #5  0x00007ffff178a74b _ZN3JSC4Wasm10BBQJITImpl6BBQJIT20returnValuesFromCallILm8EEEvRN3WTF6VectorINS2_5ValueEXT_ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEERKNS0_17FunctionSignatureERKNS0_15CallInformationE (libjavascriptcoregtk-4.1.so.0 + 0x158a74b)
+                                                #6  0x00007ffff177704f _ZN3JSC4Wasm10BBQJITImpl6BBQJIT7addCallEjRKNS0_14TypeDefinitionERN3WTF6VectorINS2_5ValueELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEERNS7_IS8_Lm8ES9_Lm16ESA_EENS_16CallLinkInfoBase8CallTypeE (libjavascriptcoregtk-4.1.so.0 + 0x157704f)
+                                                #7  0x00007ffff17c0f65 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE15parseExpressionEv (libjavascriptcoregtk-4.1.so.0 + 0x15c0f65)
+                                                #8  0x00007ffff17d1745 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE9parseBodyEv (libjavascriptcoregtk-4.1.so.0 + 0x15d1745)
+                                                #9  0x00007ffff17d2022 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE5parseEv (libjavascriptcoregtk-4.1.so.0 + 0x15d2022)
+                                                #10 0x00007ffff17795cd _ZN3JSC4Wasm18parseAndCompileBBQERNS0_18CompilationContextERNS0_9BBQCalleeERKNS0_12FunctionDataERKNS0_14TypeDefinitionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSB_15CrashOnOverflowELm16ENSB_10FastMallocEEERKNS0_17ModuleInformationENS_10MemoryModeEjSt8optionalIbEjPNS0_11TierUpCountE (libjavascriptcoregtk-4.1.so.0 + 0x15795cd)
+                                                #11 0x00007ffff1822ad9 _ZN3JSC4Wasm7BBQPlan15compileFunctionEjRNS0_9BBQCalleeERNS0_18CompilationContextERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEEPNS0_11TierUpCountE (libjavascriptcoregtk-4.1.so.0 + 0x1622ad9)
+                                                #12 0x00007ffff183aec3 _ZN3JSC4Wasm7BBQPlan4workENS0_4Plan17CompilationEffortE (libjavascriptcoregtk-4.1.so.0 + 0x163aec3)
+                                                #13 0x00007ffff1a176fb _ZN3JSC4Wasm8Worklist6Thread4workEv (libjavascriptcoregtk-4.1.so.0 + 0x18176fb)
+                                                #14 0x00007ffff1aff1e7 _ZN3WTF6Detail15CallableWrapperIZNS_15AutomaticThread5startERKNS_14AbstractLockerEEUlvE_vJEE4callEv (libjavascriptcoregtk-4.1.so.0 + 0x18ff1e7)
+                                                #15 0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #16 0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #17 0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #18 0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464974:
+                                                #0  0x00007fffed4a2e3f __pthread_kill_implementation (libc.so.6 + 0x8fe3f)
+                                                #1  0x00007ffff1ba9bf5 _ZN3WTF6Thread7suspendERKNS_19ThreadSuspendLockerE (libjavascriptcoregtk-4.1.so.0 + 0x19a9bf5)
+                                                #2  0x00007ffff1b38c66 _ZN3WTF17sendMessageScopedERKNS_19ThreadSuspendLockerERNS_6ThreadERKNS_12ScopedLambdaIFvRNS_17PlatformRegistersEEEE (libjavascriptcoregtk-4.1.so.0 + 0x1938c66)
+                                                #3  0x00007ffff1925e9e _ZN3JSC4Wasm33resetInstructionCacheOnAllThreadsEv (libjavascriptcoregtk-4.1.so.0 + 0x1725e9e)
+                                                #4  0x00007ffff18838ee _ZN3JSC4Wasm18CallsiteCollection23updateCallsitesToCallUsERKN3WTF14AbstractLockerERNS0_11CalleeGroupENS_17CodeLocationLabelILNS2_6PtrTagE64376EEEjj (libjavascriptcoregtk-4.1.so.0 + 0x16838ee)
+                                                #5  0x00007ffff183b610 _ZN3JSC4Wasm7BBQPlan4workENS0_4Plan17CompilationEffortE (libjavascriptcoregtk-4.1.so.0 + 0x163b610)
+                                                #6  0x00007ffff1a176fb _ZN3JSC4Wasm8Worklist6Thread4workEv (libjavascriptcoregtk-4.1.so.0 + 0x18176fb)
+                                                #7  0x00007ffff1aff1e7 _ZN3WTF6Detail15CallableWrapperIZNS_15AutomaticThread5startERKNS_14AbstractLockerEEUlvE_vJEE4callEv (libjavascriptcoregtk-4.1.so.0 + 0x18ff1e7)
+                                                #8  0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #9  0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #10 0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #11 0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464959:
+                                                #0  0x00007fffed50f62f __poll (libc.so.6 + 0xfc62f)
+                                                #1  0x00007ffff2144f2f g_main_context_iterate_unlocked.isra.0 (libglib-2.0.so.0 + 0x5ef2f)
+                                                #2  0x00007ffff214588f g_main_loop_run (libglib-2.0.so.0 + 0x5f88f)
+                                                #3  0x00007ffff1ba5700 _ZN3WTF7RunLoop3runEv (libjavascriptcoregtk-4.1.so.0 + 0x19a5700)
+                                                #4  0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #5  0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #6  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #7  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464903:
+                                                #0  0x00007fffed50f62f __poll (libc.so.6 + 0xfc62f)
+                                                #1  0x00007ffff2144f2f g_main_context_iterate_unlocked.isra.0 (libglib-2.0.so.0 + 0x5ef2f)
+                                                #2  0x00007ffff214588f g_main_loop_run (libglib-2.0.so.0 + 0x5f88f)
+                                                #3  0x00007ffff1ba5700 _ZN3WTF7RunLoop3runEv (libjavascriptcoregtk-4.1.so.0 + 0x19a5700)
+                                                #4  0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #5  0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #6  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #7  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464977:
+                                                #0  0x00007ffff1752282 _ZN3JSC4Wasm10BBQJITImpl6BBQJIT9addI32ClzENS2_5ValueERS3_ (libjavascriptcoregtk-4.1.so.0 + 0x1552282)
+                                                #1  0x00007ffff179746e _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE9unaryCaseENS0_6OpTypeEMS3_FNSt12experimental15fundamentals_v38expectedIvN3WTF6StringEEENS3_5ValueERSC_ENS0_4TypeESG_ (libjavascriptcoregtk-4.1.so.0 + 0x159746e)
+                                                #2  0x00007ffff17b68d1 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE15parseExpressionEv (libjavascriptcoregtk-4.1.so.0 + 0x15b68d1)
+                                                #3  0x00007ffff17d1745 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE9parseBodyEv (libjavascriptcoregtk-4.1.so.0 + 0x15d1745)
+                                                #4  0x00007ffff17d2022 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE5parseEv (libjavascriptcoregtk-4.1.so.0 + 0x15d2022)
+                                                #5  0x00007ffff17795cd _ZN3JSC4Wasm18parseAndCompileBBQERNS0_18CompilationContextERNS0_9BBQCalleeERKNS0_12FunctionDataERKNS0_14TypeDefinitionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSB_15CrashOnOverflowELm16ENSB_10FastMallocEEERKNS0_17ModuleInformationENS_10MemoryModeEjSt8optionalIbEjPNS0_11TierUpCountE (libjavascriptcoregtk-4.1.so.0 + 0x15795cd)
+                                                #6  0x00007ffff1822ad9 _ZN3JSC4Wasm7BBQPlan15compileFunctionEjRNS0_9BBQCalleeERNS0_18CompilationContextERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEEPNS0_11TierUpCountE (libjavascriptcoregtk-4.1.so.0 + 0x1622ad9)
+                                                #7  0x00007ffff183aec3 _ZN3JSC4Wasm7BBQPlan4workENS0_4Plan17CompilationEffortE (libjavascriptcoregtk-4.1.so.0 + 0x163aec3)
+                                                #8  0x00007ffff1a176fb _ZN3JSC4Wasm8Worklist6Thread4workEv (libjavascriptcoregtk-4.1.so.0 + 0x18176fb)
+                                                #9  0x00007ffff1aff1e7 _ZN3WTF6Detail15CallableWrapperIZNS_15AutomaticThread5startERKNS_14AbstractLockerEEUlvE_vJEE4callEv (libjavascriptcoregtk-4.1.so.0 + 0x18ff1e7)
+                                                #10 0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #11 0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #12 0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #13 0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464938:
+                                                #0  0x00007fffed51ad1d syscall (libc.so.6 + 0x107d1d)
+                                                #1  0x00007ffff219fd00 g_cond_wait (libglib-2.0.so.0 + 0xb9d00)
+                                                #2  0x00007ffff210e0bb g_async_queue_pop_intern_unlocked (libglib-2.0.so.0 + 0x280bb)
+                                                #3  0x00007ffff2172b52 g_thread_pool_spawn_thread (libglib-2.0.so.0 + 0x8cb52)
+                                                #4  0x00007ffff21723bd g_thread_proxy (libglib-2.0.so.0 + 0x8c3bd)
+                                                #5  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #6  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464900:
+                                                #0  0x00007fffed50f62f __poll (libc.so.6 + 0xfc62f)
+                                                #1  0x00007ffff2144f2f g_main_context_iterate_unlocked.isra.0 (libglib-2.0.so.0 + 0x5ef2f)
+                                                #2  0x00007ffff214588f g_main_loop_run (libglib-2.0.so.0 + 0x5f88f)
+                                                #3  0x00007ffff1ba5700 _ZN3WTF7RunLoop3runEv (libjavascriptcoregtk-4.1.so.0 + 0x19a5700)
+                                                #4  0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #5  0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #6  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #7  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464975:
+                                                #0  0x00007ffff1789560 _ZN3WTF6VectorIN3JSC4Wasm19FunctionParserTypesINS2_10BBQJITImpl6BBQJIT11ControlDataENS5_5ValueENS1_16CallLinkInfoBase8CallTypeEE12ControlEntryELm16ENS_15CrashOnOverflowELm16ENS_10FastMallocEE8takeLastEv (libjavascriptcoregtk-4.1.so.0 + 0x1589560)
+                                                #1  0x00007ffff17b514c _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE15parseExpressionEv (libjavascriptcoregtk-4.1.so.0 + 0x15b514c)
+                                                #2  0x00007ffff17d1745 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE9parseBodyEv (libjavascriptcoregtk-4.1.so.0 + 0x15d1745)
+                                                #3  0x00007ffff17d2022 _ZN3JSC4Wasm14FunctionParserINS0_10BBQJITImpl6BBQJITEE5parseEv (libjavascriptcoregtk-4.1.so.0 + 0x15d2022)
+                                                #4  0x00007ffff17795cd _ZN3JSC4Wasm18parseAndCompileBBQERNS0_18CompilationContextERNS0_9BBQCalleeERKNS0_12FunctionDataERKNS0_14TypeDefinitionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSB_15CrashOnOverflowELm16ENSB_10FastMallocEEERKNS0_17ModuleInformationENS_10MemoryModeEjSt8optionalIbEjPNS0_11TierUpCountE (libjavascriptcoregtk-4.1.so.0 + 0x15795cd)
+                                                #5  0x00007ffff1822ad9 _ZN3JSC4Wasm7BBQPlan15compileFunctionEjRNS0_9BBQCalleeERNS0_18CompilationContextERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEEPNS0_11TierUpCountE (libjavascriptcoregtk-4.1.so.0 + 0x1622ad9)
+                                                #6  0x00007ffff183aec3 _ZN3JSC4Wasm7BBQPlan4workENS0_4Plan17CompilationEffortE (libjavascriptcoregtk-4.1.so.0 + 0x163aec3)
+                                                #7  0x00007ffff1a176fb _ZN3JSC4Wasm8Worklist6Thread4workEv (libjavascriptcoregtk-4.1.so.0 + 0x18176fb)
+                                                #8  0x00007ffff1aff1e7 _ZN3WTF6Detail15CallableWrapperIZNS_15AutomaticThread5startERKNS_14AbstractLockerEEUlvE_vJEE4callEv (libjavascriptcoregtk-4.1.so.0 + 0x18ff1e7)
+                                                #9  0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #10 0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #11 0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #12 0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464940:
+                                                #0  0x00007fffed51ad1d syscall (libc.so.6 + 0x107d1d)
+                                                #1  0x00007ffff219feac g_cond_wait_until (libglib-2.0.so.0 + 0xb9eac)
+                                                #2  0x00007ffff210e093 g_async_queue_pop_intern_unlocked (libglib-2.0.so.0 + 0x28093)
+                                                #3  0x00007ffff2172eca g_thread_pool_thread_proxy (libglib-2.0.so.0 + 0x8ceca)
+                                                #4  0x00007ffff21723bd g_thread_proxy (libglib-2.0.so.0 + 0x8c3bd)
+                                                #5  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #6  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464922:
+                                                #0  0x00007fffed50f62f __poll (libc.so.6 + 0xfc62f)
+                                                #1  0x00007ffff2144f2f g_main_context_iterate_unlocked.isra.0 (libglib-2.0.so.0 + 0x5ef2f)
+                                                #2  0x00007ffff214588f g_main_loop_run (libglib-2.0.so.0 + 0x5f88f)
+                                                #3  0x00007ffff1ba5700 _ZN3WTF7RunLoop3runEv (libjavascriptcoregtk-4.1.so.0 + 0x19a5700)
+                                                #4  0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #5  0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #6  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #7  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464980:
+                                                #0  0x00007fffed49dc5e __futex_abstimed_wait_common (libc.so.6 + 0x8ac5e)
+                                                #1  0x00007fffed4a07d5 pthread_cond_timedwait@@GLIBC_2.3.2 (libc.so.6 + 0x8d7d5)
+                                                #2  0x00007ffff1ba9891 _ZN3WTF15ThreadCondition9timedWaitERNS_5MutexENS_8WallTimeE (libjavascriptcoregtk-4.1.so.0 + 0x19a9891)
+                                                #3  0x00007ffff1b3284b _ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEERKNS_24TimeWithDynamicClockTypeE (libjavascriptcoregtk-4.1.so.0 + 0x193284b)
+                                                #4  0x00007ffff1aff151 _ZN3WTF6Detail15CallableWrapperIZNS_15AutomaticThread5startERKNS_14AbstractLockerEEUlvE_vJEE4callEv (libjavascriptcoregtk-4.1.so.0 + 0x18ff151)
+                                                #5  0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #6  0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #7  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #8  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464935:
+                                                #0  0x00007fffed49dc5e __futex_abstimed_wait_common (libc.so.6 + 0x8ac5e)
+                                                #1  0x00007fffed4a04c0 pthread_cond_wait@@GLIBC_2.3.2 (libc.so.6 + 0x8d4c0)
+                                                #2  0x00007fff85f175e9 cnd_wait (iris_dri.so + 0x1175e9)
+                                                #3  0x00007fff85ef79db util_queue_thread_func (iris_dri.so + 0xf79db)
+                                                #4  0x00007fff85f17527 impl_thrd_routine (iris_dri.so + 0x117527)
+                                                #5  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #6  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464945:
+                                                #0  0x00007fffed49dc5e __futex_abstimed_wait_common (libc.so.6 + 0x8ac5e)
+                                                #1  0x00007fffed4a04c0 pthread_cond_wait@@GLIBC_2.3.2 (libc.so.6 + 0x8d4c0)
+                                                #2  0x00007fff85f175e9 cnd_wait (iris_dri.so + 0x1175e9)
+                                                #3  0x00007fff85ef79db util_queue_thread_func (iris_dri.so + 0xf79db)
+                                                #4  0x00007fff85f17527 impl_thrd_routine (iris_dri.so + 0x117527)
+                                                #5  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #6  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464939:
+                                                #0  0x00007fffed50f62f __poll (libc.so.6 + 0xfc62f)
+                                                #1  0x00007ffff2144f2f g_main_context_iterate_unlocked.isra.0 (libglib-2.0.so.0 + 0x5ef2f)
+                                                #2  0x00007ffff21455cc g_main_context_iteration (libglib-2.0.so.0 + 0x5f5cc)
+                                                #3  0x00007ffff2145611 glib_worker_main (libglib-2.0.so.0 + 0x5f611)
+                                                #4  0x00007ffff21723bd g_thread_proxy (libglib-2.0.so.0 + 0x8c3bd)
+                                                #5  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #6  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464942:
+                                                #0  0x00007fffed50f62f __poll (libc.so.6 + 0xfc62f)
+                                                #1  0x00007ffff2144f2f g_main_context_iterate_unlocked.isra.0 (libglib-2.0.so.0 + 0x5ef2f)
+                                                #2  0x00007ffff214588f g_main_loop_run (libglib-2.0.so.0 + 0x5f88f)
+                                                #3  0x00007fffedd37526 gdbus_shared_thread_func (libgio-2.0.so.0 + 0x127526)
+                                                #4  0x00007ffff21723bd g_thread_proxy (libglib-2.0.so.0 + 0x8c3bd)
+                                                #5  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #6  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464967:
+                                                #0  0x00007fffed50f62f __poll (libc.so.6 + 0xfc62f)
+                                                #1  0x00007ffff2144f2f g_main_context_iterate_unlocked.isra.0 (libglib-2.0.so.0 + 0x5ef2f)
+                                                #2  0x00007ffff214588f g_main_loop_run (libglib-2.0.so.0 + 0x5f88f)
+                                                #3  0x00007ffff1ba5700 _ZN3WTF7RunLoop3runEv (libjavascriptcoregtk-4.1.so.0 + 0x19a5700)
+                                                #4  0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #5  0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #6  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #7  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464899:
+                                                #0  0x00007fffed49dc5e __futex_abstimed_wait_common (libc.so.6 + 0x8ac5e)
+                                                #1  0x00007fffed4a07d5 pthread_cond_timedwait@@GLIBC_2.3.2 (libc.so.6 + 0x8d7d5)
+                                                #2  0x00007ffff1c00023 scavenger_thread_main (libjavascriptcoregtk-4.1.so.0 + 0x1a00023)
+                                                #3  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #4  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464944:
+                                                #0  0x00007fffed49dc5e __futex_abstimed_wait_common (libc.so.6 + 0x8ac5e)
+                                                #1  0x00007fffed4a04c0 pthread_cond_wait@@GLIBC_2.3.2 (libc.so.6 + 0x8d4c0)
+                                                #2  0x00007fff85f175e9 cnd_wait (iris_dri.so + 0x1175e9)
+                                                #3  0x00007fff85ef79db util_queue_thread_func (iris_dri.so + 0xf79db)
+                                                #4  0x00007fff85f17527 impl_thrd_routine (iris_dri.so + 0x117527)
+                                                #5  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #6  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464943:
+                                                #0  0x00007fffed49dc5e __futex_abstimed_wait_common (libc.so.6 + 0x8ac5e)
+                                                #1  0x00007fffed4a04c0 pthread_cond_wait@@GLIBC_2.3.2 (libc.so.6 + 0x8d4c0)
+                                                #2  0x00007fff85f175e9 cnd_wait (iris_dri.so + 0x1175e9)
+                                                #3  0x00007fff85ef79db util_queue_thread_func (iris_dri.so + 0xf79db)
+                                                #4  0x00007fff85f17527 impl_thrd_routine (iris_dri.so + 0x117527)
+                                                #5  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #6  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464901:
+                                                #0  0x00007fffed50f62f __poll (libc.so.6 + 0xfc62f)
+                                                #1  0x00007ffff2144f2f g_main_context_iterate_unlocked.isra.0 (libglib-2.0.so.0 + 0x5ef2f)
+                                                #2  0x00007ffff214588f g_main_loop_run (libglib-2.0.so.0 + 0x5f88f)
+                                                #3  0x00007ffff1ba5700 _ZN3WTF7RunLoop3runEv (libjavascriptcoregtk-4.1.so.0 + 0x19a5700)
+                                                #4  0x00007ffff1b38f52 _ZN3WTF6Thread10entryPointEPNS0_16NewThreadContextE (libjavascriptcoregtk-4.1.so.0 + 0x1938f52)
+                                                #5  0x00007ffff1ba8ea9 _ZN3WTFL19wtfThreadEntryPointEPv (libjavascriptcoregtk-4.1.so.0 + 0x19a8ea9)
+                                                #6  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #7  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464934:
+                                                #0  0x00007fffed49dc5e __futex_abstimed_wait_common (libc.so.6 + 0x8ac5e)
+                                                #1  0x00007fffed4a04c0 pthread_cond_wait@@GLIBC_2.3.2 (libc.so.6 + 0x8d4c0)
+                                                #2  0x00007fff85f175e9 cnd_wait (iris_dri.so + 0x1175e9)
+                                                #3  0x00007fff85ef79db util_queue_thread_func (iris_dri.so + 0xf79db)
+                                                #4  0x00007fff85f17527 impl_thrd_routine (iris_dri.so + 0x117527)
+                                                #5  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #6  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+
+                                                Stack trace of thread 1464946:
+                                                #0  0x00007fffed49dc5e __futex_abstimed_wait_common (libc.so.6 + 0x8ac5e)
+                                                #1  0x00007fffed4a04c0 pthread_cond_wait@@GLIBC_2.3.2 (libc.so.6 + 0x8d4c0)
+                                                #2  0x00007fff85f175e9 cnd_wait (iris_dri.so + 0x1175e9)
+                                                #3  0x00007fff85ef79db util_queue_thread_func (iris_dri.so + 0xf79db)
+                                                #4  0x00007fff85f17527 impl_thrd_routine (iris_dri.so + 0x117527)
+                                                #5  0x00007fffed4a1272 start_thread (libc.so.6 + 0x8e272)
+                                                #6  0x00007fffed51cdec __clone3 (libc.so.6 + 0x109dec)
+                                                ELF object binary architecture: AMD x86-64
+Nov 30 10:56:20 main systemd[1]: systemd-coredump@22-1464984-0.service: Deactivated successfully.
+Nov 30 10:56:20 main systemd[1]: systemd-coredump@22-1464984-0.service: Consumed 9.602s CPU time, no IP traffic.
