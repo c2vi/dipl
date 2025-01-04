@@ -13,3 +13,32 @@ Typst is a Markup language very similar to Markdown, but was made for building d
 
 
 = The htldoc tool
+
+== Usage of Nix
+- to get working pdflagex pkgs on every distro
+- for the configuration of the htldoc tool
+
+== Getting configuration options from htldoc.nix into the Latex template
+
+
+== The Generate Listing Subcommand
+
+=== Use of an LLM to generate the core logic for this script
+The prompt:
+```
+can you write a python script, which takes as it's first argument the path to a git repository and then goes through all commits of a predefined branch starting from a predefined commit and for each one runns a predefined command which would generate a pdf file. this pdf should be copied to a predefined folder. then also it generates a html file serving as the index over all the pdf files showing the commit hash, link to the github repo of this commit, date of the commit. commits in this list should be ordered by date.
+```
+
+with two relevant follow up changes:
+```
+can you refactor, so that the configuration comes from a json string, that gets passed to --config
+```
+
+```
+can you make it so, that in the html file only commits, where the pdf changed, is included
+```
+
+the full conversation can be found here: https://chatgpt.com/share/6776bc6b-9824-800e-bb77-120111ab6bab
+
+
+
