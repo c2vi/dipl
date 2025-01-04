@@ -47,13 +47,15 @@
 
   twoSidePrinting = true;
 
-  htldocVersion = "github:c2vi/htldoc/eb8a59dab711f76605d876bb3cc09cede58fd87a"; # can be used to pin a specific version of htldoc
+  htldocVersion = "github:c2vi/htldoc/master"; # can be used to pin a specific version of htldoc
+
+  #htldocVersion = "/home/me/work/diplomarbeit/sebastian/htldoc";
 
   htldocBuildDir = "./build"; # where to put build artefacts into
 
 
 
 
-  genListing.startCommit = "12b5de9f405aef3630b5382ac2efbee3afe0e0eb";
+  genListing.startCommit = "c6894ab047f0b8a21cf4aa9e44a0406f7e9d98c9";
 }
 
