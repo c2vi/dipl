@@ -9,17 +9,17 @@
   # the options you HAVE to change
   ###############################################
 
-  title = "TITLE";
+  title = "MiZe - A Software Ecosystem";
 
-  subtitle = "SUBTITLE";
+  subtitle = "";
 
-  institute = "INSTITUTE";
+  institute = "Elektronik und Technische Informatik";
 
   submissionDate = "2024-12-24";
 
-  authors = [ "AUTHOR 1" "AUTHOR 2" ];
+  authors = [ "Sebastian Moser" ];
 
-  supervisors = [ "SUPERVISOR 1" "SUPERVISOR 2" ];
+  supervisors = [ "SUPERVISOR 1" ];
 
   # here you define all the chapters of the document
   # this is, because typst and markdown don't have chapters so tha \chapter{} is added by htldoc
@@ -27,8 +27,8 @@
   # the order of chapters and files in a chapter is kept like how it's defined here
   # filenames are relative to the ./src folder, subfolders work
   chapters = [
-    [ "ChapterName" "file.tex" "reference_shortname" ]
-    [ "ChapterName" [ "file1.md" "file2.typ" "file3.tex" ] "reference_shortname" ]
+    [ "History of Mize" "history.typ" "hist" ]
+    [ "Documentation System" [ "doc-system.typ" ] "docSys" ]
   ];
 
 
@@ -47,8 +47,13 @@
 
   twoSidePrinting = true;
 
-  htldocVersion = "github:c2vi/htldoc/bd149492d3c182aea21b60e9bb9784ae537e290a"; # can be used to pin a specific version of htldoc
+  htldocVersion = "github:c2vi/htldoc/eb8a59dab711f76605d876bb3cc09cede58fd87a"; # can be used to pin a specific version of htldoc
 
   htldocBuildDir = "./build"; # where to put build artefacts into
+
+
+
+
+  genListing.startCommit = "12b5de9f405aef3630b5382ac2efbee3afe0e0eb";
 }
 
