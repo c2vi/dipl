@@ -9,11 +9,9 @@ The implementation of this predecessor of Mize, never become close to being usab
 
 = Items Project
 
-
 = Mize
 
 == Switching to Rust
 
 == Protocoll from bytes
 
-== Protocoll using the Cbor encoding

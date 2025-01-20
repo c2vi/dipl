@@ -1,15 +1,64 @@
 
+## questions
+- do i need a reference for eg
+    - the FreeBSD Foundation
+    - all the kernels
+    - linux being most used on servers, windows on desktops
 
-## The new Mize code approach
-- Previously I had a webserver written in rust ... and the client in the browser was a js client. This js client basically reimplements everything the "instance part" of the webserver -> duplicate code to maintain.
-    - a python, java, ... client was planned too
-- i don't remenber when and how exactly the idea came, to have the rust code word as a MizeInstance everywhere...
-    - wasm in the browser
-    - wasm to jvm-bytecode for jvm
-    - as a library with C bindings to use with basically every other lang ... + some fill code for that lang
-- this means that the instance code needs to be completely seperated from code that deals with specific apis of a unix system....
-    - and i have to say, this is the best thing ever ... it just makes the code so much clearer, cleaner.... and forces this clean-nes
-        - eg in commit: a16c2f92217c79445650ce1ce2e8ef6391e849c3 I went through all the instance code i had up untill then ... and it was spagetty code like ... everywhere callig unix apis and all over the place, ....
+## things
+- titel: iwie anfängs implementierung von einem kompletten software platform names mize
+
+
+
+
+
+## idea plan
+### introduction
+- was is a software platform bzw ecosystem
+
+- was is da der grundstein..... spoiler: daten management
+    - also redn über wie ma in programmen so normalerweise daten speichert.... + pros cons
+    - sync als problem mit den meisten möglichkeiten
+    - jedes programm machts anders.... interop, eine user-schnitstelle, powerfull cli apps gehn nicht, weil cli user ein kleiner marktanteil sind, die deswegen nit berücksichtigt werden
+- weitere teile der platform: mme, mmc, victorinix, mizeOS
+
+### goal
+- mize should eventually run on any computer system
+
+### implementing mize
+- write about some kind of entscheidungen ... die getroffen wurden
+
+
+- one thread could deadlock
+
+
+- The new Mize code approach
+    - Previously I had a webserver written in rust ... and the client in the browser was a js client. This js client basically reimplements everything the "instance part" of the webserver -> duplicate code to maintain.
+        - a python, java, ... client was planned too
+    - i don't remenber when and how exactly the idea came, to have the rust code word as a MizeInstance everywhere...
+        - wasm in the browser
+        - wasm to jvm-bytecode for jvm
+        - as a library with C bindings to use with basically every other lang ... + some fill code for that lang
+    - this means that the instance code needs to be completely seperated from code that deals with specific apis of a unix system....
+        - and i have to say, this is the best thing ever ... it just makes the code so much clearer, cleaner.... and forces this clean-nes
+            - eg in commit: a16c2f92217c79445650ce1ce2e8ef6391e849c3 I went through all the instance code i had up untill then ... and it was spagetty code like ... everywhere callig unix apis and all over the place, ....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Einleitung
@@ -65,11 +114,6 @@ https://github.com/c2vi/mize
 ### Switching to Cbor
 
 ### Becoming Portable
-Before this commit: a16c2f92217c79445650ce1ce2e8ef6391e849c3 mize would be a server, and have client implementations in many languages. Most importantly js for the browser, Python for quick programs and C for a small embedded client for uCs.
-
-The thing with this approach is, that you would have a lot of functionality (eg the one for updating items) implemented multiple times, across the server and all client-implementations.
-
-- explain the new layout of the mize project
 
 #### Wasm
 - we can run rust in wasm, and call js funcs from there

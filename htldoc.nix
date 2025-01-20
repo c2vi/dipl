@@ -27,8 +27,11 @@
   # the order of chapters and files in a chapter is kept like how it's defined here
   # filenames are relative to the ./src folder, subfolders work
   chapters = [
+    [ "Introduction" "introduction.typ" "intro" ]
+    [ "Task" "task.typ" "task" ]
     [ "History of Mize" "history.typ" "hist" ]
     [ "Documentation System" [ "doc-system.typ" ] "docSys" ]
+    [ "Implementing MiZe" [ "implementing-mize.typ" ] "impl" ]
   ];
 
 
@@ -47,7 +50,7 @@
 
   twoSidePrinting = true;
 
-  htldocVersion = "github:c2vi/htldoc/master"; # can be used to pin a specific version of htldoc
+  htldocVersion = "github:c2vi/htldoc"; # can be used to pin a specific version of htldoc
 
   #htldocVersion = "/home/me/work/diplomarbeit/sebastian/htldoc";
 
