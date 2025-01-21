@@ -19,7 +19,7 @@ The two most used kernels are the Windows Kernel, which is the most popular opti
 
 The differences important for distributing our software are the apis used by userspace programs to interact with the kernel, also called system calls or syscalls, and the file formats executable programms and libraries need to be in, so that ther kernel can execute/load the machine code.
 
-Another possibility that can be considered for distributing software ist systems without a kernel or small micro and realtime kernels. Such szenarios are often found in embedded devices and are also called "bare metal" systems.
+Another possibility that can be considered for distributing software ist systems without a kernel or small micro and realtime kernels. Such szenarios are often found in embedded devices and are also called "bare metal" systems. //also talk about efi???
 
 ==== Syscalls
 A userspace program has to use syscalls to do anything that is not modifying it's own memory pages. Running another program, reading a file, using a network interface, allocating more memory, ... are all things somehow done via a syscall. In order to invoke a syscall a program has to set some cpu registers acording to the syscall spec and then execute the "syscall" instruction.
@@ -28,9 +28,13 @@ Unix based kernels like Linux, FreeBSD Kernel and Xnu take the approach of havin
 
 
 ==== File Formats
+The file containing the executable code we distribute has to be in the right format for the kernel to load it into memory and start executing it as a new process or a dynamic library.
+
+The Executable Linkable Format (= ELF) is what used by Linux and FreeBSD kernels. Windows and the former DOS have the Portable Executable format and the Apple kernel uses a file format called Mach-O.
 
 
 === CPU architecture
+The CPU architecture defines what instructions a CPU can execute and how they need to be structured. Common examples for CPU architectures are x86, arm, avr and riscv, but many more exist.
 
 === OS Userspace
 
