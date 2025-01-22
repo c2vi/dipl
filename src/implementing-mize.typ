@@ -4,10 +4,13 @@
 
 
 = Packaging and Distributing <idea-of-mize>
-// hmmm don't know yet what to write here
+
+== What is Software Packaging
+Software Packaging is the process of getting all parts of a Software Application into a format, that can be used to run the Application (or use the library) on a certain user's system.
 
 
-== Differences between computer systems
+
+== Differences between computer systems this project should be able to run on
 There are countless details/characteristics that can be different between a user system (also called the target system) and the system that is used to develop in this case the Mize platform. Also user systems might vary across many of said details. The software you write is only usefull to the user, if it runs on whatever system the user has. For the Mize platform it is a goal to eventually run on any computer system as seen in @idea-of-mize
 
 A broad sumary of such characteristics of a computer system follows.
@@ -20,6 +23,7 @@ The two most used kernels are the Windows Kernel, which is the most popular opti
 The differences important for distributing our software are the apis used by userspace programs to interact with the kernel, also called system calls or syscalls, and the file formats executable programms and libraries need to be in, so that ther kernel can execute/load the machine code.
 
 Another possibility that can be considered for distributing software ist systems without a kernel or small micro and realtime kernels. Such szenarios are often found in embedded devices and are also called "bare metal" systems. //also talk about efi???
+
 
 ==== Syscalls
 A userspace program has to use syscalls to do anything that is not modifying it's own memory pages. Running another program, reading a file, using a network interface, allocating more memory, ... are all things somehow done via a syscall. In order to invoke a syscall a program has to set some cpu registers acording to the syscall spec and then execute the "syscall" instruction.
@@ -36,25 +40,47 @@ The Executable Linkable Format (= ELF) is what used by Linux and FreeBSD kernels
 === CPU architecture
 The CPU architecture defines what instructions a CPU can execute and how they need to be structured. Common examples for CPU architectures are x86, arm, avr and riscv, but many more exist.
 
-=== OS Userspace
 
+=== OS userspace
 Windows solves their everchanging syscalls by providing system libraries like for example kernel32.dll and user32.dll, which programs should use to interact with the kernel. Also when using Unix kernels syscall aren't invoked by your code directly, there is a so called "standard library" for that. Besides havind functions, that directly call syscalls standard libraries also have a lot of functionality that makes interacting with the kernel more friendly. Multiple of such standard libraries exist. The most used one is glibc, made as part of the GNU project. Others are Musl, bionic, newlib and some more.
 
+Userspace wise Windows makes it easy for us, as there is only one Userspace. Linux however has over 1000 different distributions. Some are very similar, like Debian and Ubuntu and some do things completely differently, like Android or NixOS.
 
 
-=== Available Hardware
+// write about linking with different dlls depending on gui or cli application
+// A special thing about the Windows userspace is that our binary needs to link with a different dll  ... actually i don't know enought about that..
 
-== What is Software Packaging
-Software Packaging is the process of getting all parts of a Software Application into a format, that can be used to run the Application (or use the library) on a certain user's system.
+// there are systems, that don't have dynamic linking at all
+
+=== Available Hardware and Drivers
+On some systems there will be special hardware for example rendering graphics or decoding a video stream. Our software should take advantage of that if available.
 
 
-== Nix
 
-=== What is Nix?
+== Implementing the distributing part
+Now that we know what all needs to be taken into account for the packaging of this project, this chapter documents the implementation of the distributing and packaging part of the Diploma Thesis.
 
-== Cross Compiling
 
-=== Why Nix was chosen
+=== Nix
+Nix is the name of a package manager and a domain specific language, that is used by this package manager to define packages.
+
+The first major difference to most other package managers is that a package is not defined as a set of attributes like the version, the name, list of dependency packages. With Nix however a package is a function in this Nix language. The parameters of this function are, every dependency, compilation options, the compiler and many "build functions" special to the targeted system and the language of the project. The functions that defines a package then calls one of those "build functions" passing it things like name, version, source-code and other metadata of the package.
+
+With most package managers apart from Nix a package defines the path it is installed into. The package manager simply runs the install code of the project using for example `make install for make based projects`. This method leads to a significant problem when you'd want to install two different versions of a package, both versions will want to install files to the same path. The Nix package manager installs a package only into a path that is unique to that package. Such a path looks for example like this: `/nix/store/<hash>-<name>-<version>/`, where `<hash>` is a hash of all used "inputs" (the arguments passed to "build functions"), therefore being only the same if you install a package with exactly matching dependencies, compiler options, target system, ....
+
+// one absatz to why nix is used
+
+=== Cross Compiling
+
+
+
+=== The distributing process
+
+```bash
+path=$(nix build .#webfiles -L -v --print-out-paths $@)
+
+[[ "$path" != "" ]] && rsync -rv $path/* ocih:host/data/my-website --rsync-path="sudo rsync"
+```
 
 
 == Development Setup
@@ -88,9 +114,14 @@ Software Packaging is the process of getting all parts of a Software Application
 
 = The Gui engine
 
+
 == A segfault because of webkitgtk
 #include "./webkitgtk-regression.typ"
 
 
 
 = The Command engine
+
+
+
+
