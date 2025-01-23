@@ -88,7 +88,6 @@ path=$(nix build .#webfiles -L -v --print-out-paths $@)
 
 
 
-
 == The Module System
 
 
@@ -109,6 +108,48 @@ path=$(nix build .#webfiles -L -v --print-out-paths $@)
 //The thing with this approach is, that you would have a lot of functionality (eg the one for updating items) implemented multiple times, across the server and all client-implementations.
 
 //- explain the new layout of the mize project
+
+== Instance
+// what is an instance.... what are it's jobs
+
+
+== Topology
+
+
+=== How it's implemented
+// talk about how from a theoretical standpoint and how it's implemented is peer-to-peer connections of instances
+
+
+=== Practically Speaking...
+// TODO: better title
+
+// talk about how you would from a practical standpoint
+
+
+== Protocol
+
+=== Cbor
+Cbor is the abbreviation of "Concise Binary Object Representation"
+
+// talk about what cbor is TODO NEXT
+// google what cbor is for that....
+
+// another paragraph why it was chosen
+
+=== A Message
+
+// how a message looks like ... that it's very extensible like that
+
+// what message types exist till now
+
+=== Types of Messages
+
+
+== Update coersion
+// the concept that one instance is responsible for an item ... with OT
+
+// future plans of an crdt impl...
+
 
 
 
