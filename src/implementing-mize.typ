@@ -101,7 +101,22 @@ path=$(nix build .#webfiles -L -v --print-out-paths $@)
 
   //- incoperating all the learnings from that... we now look at the latest implementation attempt, that will hopefully stand the test of time.
 
+== Topology
+
+
+=== How it's implemented
+// talk about how from a theoretical standpoint and how it's implemented is peer-to-peer connections of instances
+
+
+
+=== Practically Speaking...
+// TODO: better title
+
+// talk about how you would from a practical standpoint
+
+
 == Portability
+
 
 //Before this commit: a16c2f92217c79445650ce1ce2e8ef6391e849c3 mize would be a server, and have client implementations in many languages. Most importantly js for the browser, Python for quick programs and C for a small embedded client for uCs.
 
@@ -113,30 +128,15 @@ path=$(nix build .#webfiles -L -v --print-out-paths $@)
 // what is an instance.... what are it's jobs
 
 
-== Topology
-
-
-=== How it's implemented
-// talk about how from a theoretical standpoint and how it's implemented is peer-to-peer connections of instances
-
-
-=== Practically Speaking...
-// TODO: better title
-
-// talk about how you would from a practical standpoint
-
-
 == Protocol
 
 === Cbor
-Cbor is the abbreviation of "Concise Binary Object Representation"
+Cbor (= Concise Binary Object Representation) is a data encoding format similar to JSON, but binary instead of Text based, making it not human readable. A binary encoding scheme was chosen above the Text based JSON for two advantages. Firstly less overhad is added by the encoding itself and secondly it supports encoding arbitrary byte values. With JSON such arbitrary data values would be encoded into Base64 frist, which further increases the size of encoded data by a third.
 
-// talk about what cbor is TODO NEXT
-// google what cbor is for that....
-
-// another paragraph why it was chosen
 
 === A Message
+Cbor has a data type called map, that is just like a json object.
+
 
 // how a message looks like ... that it's very extensible like that
 
