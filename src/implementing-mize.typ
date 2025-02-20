@@ -76,43 +76,69 @@ With most package managers apart from Nix a package defines the path it is insta
 
 === The distributing process
 
-```bash
-path=$(nix build .#webfiles -L -v --print-out-paths $@)
-
-[[ "$path" != "" ]] && rsync -rv $path/* ocih:host/data/my-website --rsync-path="sudo rsync"
-```
-
-
-== Development Setup
-#include "./dev-environment.typ"
+//```bash
+//path=$(nix build .#webfiles -L -v --print-out-paths $@)
+//
+//[[ "$path" != "" ]] && rsync -rv $path/* ocih:host/data/my-website --rsync-path="sudo rsync"
+//```
 
 
+//== Development Setup
+//#include "./dev-environment.typ"
 
-== The Module System
+
+
+=== The Module System
 
 
 
 
 
 = The Data engine
+//Previous attempts at making a general data mamagement solution were looked at in @hist.
+
+This chapter is about the implementation of the so called "Data engine" that will form the basis of the mize platform. 
+
+
+// nope .. As already said @idea-of-mize a way to manage data is the basis of any software project. This chapter looks at the implementation
+
 //- As already said in (TODO: link to idea-of-mize), a way to manage data is the basis of any software project.
 
 //- and in #link("hist") previous attempts at implementing a generla solution for that data management were examined.
 
-  //- incoperating all the learnings from that... we now look at the latest implementation attempt, that will hopefully stand the test of time.
-
-== Topology
+//- incoperating all the learnings from that... we now look at the latest implementation attempt, that will hopefully stand the test of time.
 
 
-=== How it's implemented
+== The Instance
+The Instance is the main concept of the mize data engine. Everywhere some code needs to acces, store or update some data an Instance will be present and the interacting with data will be done through methods of the Instance. There is a Rust struct called Instance that holds all nececary state and implements those methods in the file `./src/core/instance/mod.rs` of the mize soure code.
+
+// think some more is needed here... maybe code exmample
+
+
+== Network of Instances
+It is important for instances to be able to talk to one another, since one of the main goals of the mize platform is that any data is usable on any device just like it was local.
+
+
+
+
+=== Topology
+The Topology is implemented in a peer-to-peer way. An Instance can establish a connection to some other Instance using one of many transport layers like tcp, quick, websockets, ipc sockets, bluetooth, sereal, shared memory, canbus and usb through which messages about data are then excanged.
+
+There is however a quite hard problem that exists in such an architecture. How does an Instance know what other Instances need to know about some change in some data? What if two Instances what to update the same data at the same time? This problem gets even harder when an Instance is offline for some time. This can happen if the hardware the Instance is running on is turned off, has no power or no connection to the other instance. Systems with a distributed peer-to-peer architecture can get quite complex, because of that. There is for example the concept of crdts which stands for "conflict free replicated data types". Crdts were explored for use in this project, but not used because of their complexity.
+
+Because a Server-Client architecture is so much simpler, Mize uses an architecture similar to that on top of the peer-to-peer connections.
+
+Practically speaking however the Topology resembels more of a Server-Client architecture.
+
+
+
 // talk about how from a theoretical standpoint and how it's implemented is peer-to-peer connections of instances
 
 
+== Namespaces
 
-=== Practically Speaking...
-// TODO: better title
 
-// talk about how you would from a practical standpoint
+
 
 
 == Portability
@@ -124,18 +150,16 @@ path=$(nix build .#webfiles -L -v --print-out-paths $@)
 
 //- explain the new layout of the mize project
 
-== Instance
-// what is an instance.... what are it's jobs
-
 
 == Protocol
 
+
 === Cbor
-Cbor (= Concise Binary Object Representation) is a data encoding format similar to JSON, but binary instead of Text based, making it not human readable. A binary encoding scheme was chosen above the Text based JSON for two advantages. Firstly less overhad is added by the encoding itself and secondly it supports encoding arbitrary byte values. With JSON such arbitrary data values would be encoded into Base64 frist, which further increases the size of encoded data by a third.
+Cbor (= Concise Binary Object Representation) is a data encoding format similar to JSON, but binary instead of Text based, making it not human readable. A binary encoding scheme was chosen instead of the Text based JSON for two advantages. Firstly less overhad is added by the encoding itself and secondly it supports encoding arbitrary byte sequences. With JSON such arbitrary data sequences would be encoded into Base64 frist, which further increases the size of encoded data by a third.
 
 
 === A Message
-Cbor has a data type called map, that is just like a json object.
+Cbor has a data type called map, that is just like a json object, mapping keys to values. 
 
 
 // how a message looks like ... that it's very extensible like that
