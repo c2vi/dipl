@@ -8,6 +8,10 @@
 ## things
 - titel: iwie anfängs implementierung von einem kompletten software platform names mize
 
+- a Motivation heading
+    - was ähnliches gibts schon... und was kann das zu wenig...
+    - was soll mize da anders/besser machn
+
 
 
 
