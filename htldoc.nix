@@ -28,7 +28,6 @@
   # filenames are relative to the ./src folder, subfolders work
   chapters = [
     [ "Introduction" "introduction.typ" "intro" ]
-    [ "Task" "task.typ" "task" ]
     [ "History of Mize" "history.typ" "hist" ]
     [ "Documentation System" [ "doc-system.typ" ] "docSys" ]
     [ "Implementing MiZe" [ "implementing-mize.typ" ] "impl" ]
