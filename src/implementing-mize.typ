@@ -113,10 +113,21 @@ This chapter is about the implementation of the so called "Data engine" that wil
 //- incoperating all the learnings from that... we now look at the latest implementation attempt, that will hopefully stand the test of time.
 
 == The Item
-Each bit of data is called an Item in this data engine. An Item works much like a mixture of the well established data storage concepts File and Folder. Files hold a list of bytes and Folders hold a list of links to other files. An Item has both a list of bytes, a list of links to other items and also a type.
+Each piece of data is called an Item in this data engine. An Item works much like a mixture of the well established data storage concepts File and Folder. Files hold a list of bytes and Folders hold a list of links to other files of folders. An Item has both a list of bytes (also called the value of an item) and a list of links to other items.
+
 
 === The Type System
-In an ordinary filesystem the type of the data in a file is defined by the string after the last dot or by the first few bytes of the file being a "magic value". An Item of the Mize data engine always has a type associated with it. // NEXT write smth else here... how the type system will work
+In an ordinary filesystem the type of the data in a file is defined by the string after the last dot or by the first few bytes of the file being a "magic value" (@Purohit2024Jan). An Item of the Mize data engine, in addition to having a list of bytes and a list of links, also has a type. The type of an item is stored as a string at the path "type". This type string is a with space seperated list of the names of one ore multiple types. A type can specify how to interpret the bytes in the value of the item and also what sub items at what paths with what types the item needs to have. This includes multiple levels, so also the sub items of sub items and so on are defined by a type. The type of the sub item is then whatever the parent item defines it to be and the type of the parent with a slash and the path, of where the sub item is at, added to it. There can however only be one type, that says how to interpret the value bytes. All the other types can only have path definitions or further define the interpretation.
+
+This type system allows items to have really precice types, where some application needs to add special data to it, but also if an application only deals with a very generic type, it can just ignore the more specific types in the type string.
+
+Lets look at the type system with the example of a note in my obsidian vault. It has the type string: "Note ObsidianNote MarkdownNote File MarkdownFile LinuxFile UnixFile". 
+
+- The type "Note" defines, that the bytes in the value should be interpreted as a UTF-8 string. Applications that want to just modify or display the text of the note can see the iterm as just that a string. The type Note can therefore be seen as just an alias for "String".
+
+- "MarkdownNote" further details that the string is actually Markdown source code. Also markdown notes can have yaml properties at the top of the source, so MarkdownNote also defines, that there is a path "properties", where all properties are mapped into.
+
+- "ObsidianNote" is the type, which has paths, to put all information that is specific to the obsidian notetaking application (@BibObsidian). For example ... //NEXT....
 
 
 
