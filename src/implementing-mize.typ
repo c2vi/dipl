@@ -99,18 +99,9 @@ With most package managers apart from Nix a package defines the path it is insta
 
 
 = The Data engine
-//Previous attempts at making a general data management solution were looked at in @hist.
 
-This chapter is about the implementation of the so called "Data engine" that will form the basis of the mize platform. 
+This chapter is about the implementation of the so called "Data engine" that will form the basis of the mize platform. Other projects or products with the same or similar goals were examined in @existing. My previous attempts at making a general data management system and how the idea came to be were looked at in @hist. In this chapter we look at the latest attempt, which will hopefully also be the last. It incoperates all the learnings from previous ones as well as a lot more experience with computer systems and programming.
 
-
-// nope .. As already said @idea-of-mize a way to manage data is the basis of any software project. This chapter looks at the implementation
-
-//- As already said in (TODO: link to idea-of-mize), a way to manage data is the basis of any software project.
-
-//- and in #link("hist") previous attempts at implementing a general solution for that data management were examined.
-
-//- incoperating all the learnings from that... we now look at the latest implementation attempt, that will hopefully stand the test of time.
 
 == The Item
 Each piece of data is called an Item in this data engine. An Item works much like a mixture of the well established data storage concepts File and Folder. Files hold a list of bytes and Folders hold a list of links to other files of folders. An Item has both a list of bytes (also called the value of an item) and a list of links to other items.
@@ -121,26 +112,41 @@ In an ordinary filesystem the type of the data in a file is defined by the strin
 
 This type system allows items to have really precice types, where some application needs to add special data to it, but also if an application only deals with a very generic type, it can just ignore the more specific types in the type string.
 
-Lets look at the type system with the example of a note in my obsidian vault. It has the type string: "Note ObsidianNote MarkdownNote File MarkdownFile LinuxFile UnixFile". 
+Lets look at the type system with the example of a note in my obsidian vault. It has the type string: "Note ObsidianNote MarkdownNote File MarkdownFile LinuxFile PosixFile". 
 
-- The type "Note" defines, that the bytes in the value should be interpreted as a UTF-8 string. Applications that want to just modify or display the text of the note can see the iterm as just that a string. The type Note can therefore be seen as just an alias for "String".
+- The type "Note": defines, that the bytes in the value should be interpreted as a UTF-8 string. Applications that want to just modify or display the text of the note can see the iterm as just that a string. The type Note can therefore be seen as just an alias for "String".
 
-- "MarkdownNote" further details that the string is actually Markdown source code. Also markdown notes can have yaml properties at the top of the source, so MarkdownNote also defines, that there is a path "properties", where all properties are mapped into.
+- "MarkdownNote": further details that the string is actually Markdown source code. Also markdown notes can have yaml properties at the top of the source, so MarkdownNote also defines, that there is a path "properties", where all properties are mapped into.
 
-- "ObsidianNote" is the type, which has paths, to put all information that is specific to the obsidian notetaking application (@BibObsidian). For example ... //NEXT....
+- "ObsidianNote": is the type, which has paths, to put all information that is specific to the obsidian notetaking application (@BibObsidian). For example in Obsidian every note is part of a so called vault (@BibObsidianVault) so the type ObsidianNote will include a link at the path obsidian_note to the Item, that is a the vault the note belongs to.
 
+- "File": Obsidian stores every note as just a markdown file on your system. So our note can also be seen as a "File" stored on some filesystem. (@BibFilesystem) This type means the value of our note item is the content of the File. And we have sub items at certain paths for file metadata, that files have on all platforms.
 
+- "PosixFile": There is filemetadata unique to unix systems like the permission if a user is able to execute this file (@BibUnixPerms). Things like this are again stored in sub items at certain paths, which give an application acces to this unix specific data.
 
-== The Namespaces
+- "NFSv4ACL": The file that stores our note, could have special attributes called ACLs or access control lists. There was an attempt to standardise ACLs in the Posix standard, but that was withdrawn (@BibPosixACL). Many POSIX operating systems, including Linux, implement the ACLs as defined in the NFSv4 standard but because they are not part of the POSIX standard, they should not be part of the "PosixFile" type, but rather in their own type.
 
-
-== The MizeId
 
 
 == The Instance
 The Instance is the main concept of the mize data engine. Everywhere some code needs to access, store or update some data an Instance will be present and the interacting with data will be done through methods of the Instance. There is a Rust struct called Instance that holds all necessary state and implements those methods in the file `./src/core/instance/mod.rs` of the mize source code.
 
 // think some more is needed here... maybe code example
+
+== The MizeId
+Each Item needs to be identifiable somehow. This is what the MizeId is for. It is essentially a path, but with two extra concepts.
+
+1) The first element of the path is usually the so called "store part". //NEXT....
+
+
+== The Namespace
+Every Instance has a Namespace associated with it, which will makes it uniquely identifiable anywhere. For Instances that are more consuming data or user facing the Namespace will be a UUID. When you create an Instance and don't specifically configure some Namespace a random UUID will be generated. For Instances that are supposed to own data their domain should be used. So I will have one Instance, that is my home server, which is reachable from the internet under the domain "c2vi.dev" and also has the Namespace "c2vi.dev".
+
+
+== The Mize URL
+
+
+
 
 
 == Network of Instances
