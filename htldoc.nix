@@ -29,7 +29,7 @@
   chapters = [
     [ "Introduction" "introduction.typ" "intro" ]
     [ "History of Mize" "history.typ" "hist" ]
-    [ "Documentation System" [ "doc-system.typ" ] "docSys" ]
+    # [ "Documentation System" [ "doc-system.typ" ] "docSys" ] # left out because it does not actually have anything todo with Mize....
     [ "Implementing MiZe" [ "implementing-mize.typ" ] "impl" ]
   ];
 
